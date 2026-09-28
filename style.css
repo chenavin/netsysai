@@ -194,7 +194,7 @@ section:not(.alt) .card { background: var(--paper); }
   filter: grayscale(1); opacity: .75; transition: filter .2s, opacity .2s;
 }
 .logos .logo:hover { filter: none; opacity: 1; }
-.logos .logo img { max-height: 56px; width: auto; }
+.logos .logo img { max-height: 52px; max-width: 150px; width: auto; height: auto; }
 /* Text placeholder until an official logo file is added */
 .logos .wordmark { font-weight: 800; font-size: 22px; color: var(--ink); letter-spacing: -.01em; white-space: nowrap; }
 .support { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--line); }
