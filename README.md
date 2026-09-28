@@ -23,19 +23,28 @@ Optional: link to it from your homepage repo (`chenavin.github.io`).
 
 Suggested title: **NetSysAI 2026: Registration**
 
+**Settings:** Collect email addresses (Responder input) · Allow response editing · no sign-in required. Link responses to a Google Sheet (Responses → Link to Sheets).
+
+**Section 1: About you**
+
 | # | Question | Type | Required |
 |---|----------|------|----------|
 | 1 | Full name | Short answer | ✔ |
-| 2 | Email | Short answer (response validation: email) | ✔ |
-| 3 | Affiliation (university / company) | Short answer | ✔ |
-| 4 | Position | Multiple choice: Faculty · Postdoc · PhD student · MSc student · BSc student · Industry · Other | ✔ |
-| 5 | Will you attend in person? | Multiple choice: Yes · Maybe | ✔ |
-| 6 | Dietary requirements | Checkboxes: None · Vegetarian · Vegan · Gluten-free · Other | |
-| 7 | Will you arrive by car? (for campus parking permits) | Multiple choice: Yes · No | |
-| 8 | I agree that my name and affiliation may appear in the participants list | Checkbox | |
+| 2 | Affiliation (university or company) | Short answer | ✔ |
+| 3 | Position | Multiple choice: Undergraduate student · Graduate student (MSc / PhD) · Postdoc / researcher · Faculty · Industry · Other | ✔ |
+| 4 | Dietary requirements | Checkboxes: None · Vegetarian · Vegan · Gluten-free · Other | |
+| 5 | Will you arrive by car? | Multiple choice: Yes → go to Section 2 · No → submit form | ✔ |
 
-Settings: turn on **Collect email addresses** and link the form to a Google Sheet (Responses → Link to Sheets).
-Short-talk applications for the graduate student session are not part of the form: students email the organizers directly (title, abstract, relevant publications).
+**Section 2: Car details for the campus gate** (shown only if Q5 = Yes; note: used only to arrange campus entry, shared with BGU security)
+
+| # | Question | Type | Required |
+|---|----------|------|----------|
+| 6 | License plate number | Short answer | ✔ |
+| 7 | Car model | Short answer | ✔ |
+| 8 | Car color | Short answer | ✔ |
+| 9 | Mobile phone number | Short answer | ✔ |
+
+Short-talk applications for the graduate student session are not part of the form: students email the organizers by 31 October 2026 (title, abstract, relevant publications).
 
 Then **Send → link icon → Shorten URL**, copy the `https://forms.gle/...` link, and in `index.html` set:
 
