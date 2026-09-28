@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 5 345 280" role="img" aria-label="NetSysAI network mark">
+  <defs>
+    <clipPath id="c0"><circle cx="128.74" cy="129.19" r="116.84"/></clipPath>
+    <clipPath id="c1"><circle cx="249.37" cy="129.19" r="91.14"/></clipPath>
+  </defs>
+  <g clip-path="url(#c0)"><g clip-path="url(#c1)"><circle cx="201.36" cy="207.86" r="67.77" fill="#FBE3CF"/></g></g>
+  <circle cx="128.74" cy="129.19" r="116.84" fill="none" stroke="#E1701F" stroke-width="3.8"/>
+  <circle cx="249.37" cy="129.19" r="91.14" fill="none" stroke="#2C6E72" stroke-width="2.9"/>
+  <circle cx="201.36" cy="207.86" r="67.77" fill="none" stroke="#33353A" stroke-width="1.9"/>
+  <g fill="#fff" stroke="#33353A" stroke-width="1.9">
+    <circle cx="211.21" cy="46.42" r="7"/><circle cx="268.32" cy="218.33" r="7"/><circle cx="144.64" cy="244.94" r="7"/>
+  </g>
+  <g fill="#E1701F" class="pulse">
+    <circle cx="211.21" cy="211.95" r="8.3"/><circle cx="161.43" cy="153.12" r="8.3"/><circle cx="242.85" cy="154.28" r="8.3"/>
+  </g>
+</svg>

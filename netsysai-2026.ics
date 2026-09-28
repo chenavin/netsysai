@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NetSysAI//Workshop 2026//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:netsysai-2026@chenavin.github.io
+DTSTAMP:20260928T090000Z
+DTSTART:20261119T073000Z
+DTEND:20261119T153000Z
+SUMMARY:NetSysAI 2026 – Networking and Systems for AI
+LOCATION:Ben-Gurion University of the Negev\, Be'er Sheva\, Israel
+DESCRIPTION:One-day workshop. Program and details: https://chenavin.github.io/netsysai/
+URL:https://chenavin.github.io/netsysai/
+END:VEVENT
+END:VCALENDAR
