@@ -31,14 +31,11 @@ Suggested title: **NetSysAI 2026: Registration**
 | 4 | Position | Multiple choice: Faculty · Postdoc · PhD student · MSc student · BSc student · Industry · Other | ✔ |
 | 5 | Will you attend in person? | Multiple choice: Yes · Maybe | ✔ |
 | 6 | Dietary requirements | Checkboxes: None · Vegetarian · Vegan · Gluten-free · Other | |
-| 7 | Would you like to give a short talk in the graduate student session? | Multiple choice: Yes · No | ✔ |
-| 8 | Short talk: title | Short answer (only needed if you answered Yes to 7) | |
-| 9 | Short talk: abstract (max 200 words) | Paragraph | |
-| 10 | Will you arrive by car? (for campus parking permits) | Multiple choice: Yes · No | |
-| 11 | I agree that my name and affiliation may appear in the participants list | Checkbox | |
+| 7 | Will you arrive by car? (for campus parking permits) | Multiple choice: Yes · No | |
+| 8 | I agree that my name and affiliation may appear in the participants list | Checkbox | |
 
 Settings: turn on **Collect email addresses** and link the form to a Google Sheet (Responses → Link to Sheets).
-You can use sections with "Go to section based on answer" on Q7 so questions 8–9 appear only for students who answer Yes.
+Short-talk applications for the graduate student session are not part of the form: students email the organizers directly (title, abstract, relevant publications).
 
 Then **Send → link icon → Shorten URL**, copy the `https://forms.gle/...` link, and in `index.html` set:
 
