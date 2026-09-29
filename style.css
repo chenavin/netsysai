@@ -216,7 +216,8 @@ footer strong { color: var(--white); }
   .speakers { grid-template-columns: repeat(3, 1fr); }
   .topics { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 820px) {
+/* Nav collapses into the menu button while the seven links don't fit on one line */
+@media (max-width: 1080px) {
   .nav ul { display: none; position: absolute; top: 60px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--white); border-bottom: 1px solid var(--line); padding: 8px 0; }
   .nav ul.open { display: flex; }
   .nav ul a { display: block; padding: 12px 24px; }
@@ -224,6 +225,8 @@ footer strong { color: var(--white); }
   .nav .brand { margin-right: auto; }
   .nav .btn { order: 2; }
   .menu-toggle { order: 3; }
+}
+@media (max-width: 820px) {
   .hero .wrap { grid-template-columns: 1fr; padding-top: 40px; }
   .hero-mark { max-width: 220px; justify-self: start; order: -1; }
   .two-col, .cards, .venue-grid, .orgs { grid-template-columns: 1fr; }
