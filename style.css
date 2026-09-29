@@ -221,7 +221,9 @@ footer strong { color: var(--white); }
   .nav ul.open { display: flex; }
   .nav ul a { display: block; padding: 12px 24px; }
   .menu-toggle { display: block; }
-  .nav .btn { display: none; }
+  .nav .brand { margin-right: auto; }
+  .nav .btn { order: 2; }
+  .menu-toggle { order: 3; }
   .hero .wrap { grid-template-columns: 1fr; padding-top: 40px; }
   .hero-mark { max-width: 220px; justify-self: start; order: -1; }
   .two-col, .cards, .venue-grid, .orgs { grid-template-columns: 1fr; }
