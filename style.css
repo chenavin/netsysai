@@ -98,7 +98,7 @@ a:hover { color: var(--orange); }
 .speakers-from .label { font-size: 13px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--orange-dark); }
 .speakers-from .row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 14px 30px; }
 .speakers-from img { height: 30px; width: auto; }
-.speakers-from img.lg-tu, .speakers-from img.lg-bgu { height: 40px; }
+.speakers-from img.lg-tu, .speakers-from img.lg-bgu, .speakers-from img.lg-technion { height: 40px; }
 
 /* ---------- Sections ---------- */
 section { padding: 72px 0; }
@@ -127,7 +127,7 @@ h3 { color: var(--ink); font-size: 22px; margin: 0 0 8px; letter-spacing: -.01em
 }
 
 /* ---------- Speakers ---------- */
-.speakers { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.speakers { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
 .speaker {
   background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 24px 16px 20px; text-align: center; display: flex; flex-direction: column; align-items: center;
@@ -253,5 +253,5 @@ footer strong { color: var(--white); }
   .speakers-from { flex-direction: column; gap: 14px; padding-top: 18px; padding-bottom: 20px; }
   .speakers-from .row { gap: 14px 26px; }
   .speakers-from img { height: 26px; }
-  .speakers-from img.lg-tu, .speakers-from img.lg-bgu { height: 34px; }
+  .speakers-from img.lg-tu, .speakers-from img.lg-bgu, .speakers-from img.lg-technion { height: 34px; }
 }
