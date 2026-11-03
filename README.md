@@ -44,7 +44,7 @@ Suggested title: **NetSysAI 2026: Registration**
 | 8 | Car color | Short answer | ✔ |
 | 9 | Mobile phone number | Short answer | ✔ |
 
-Short-talk applications for the graduate student session are not part of the form: students email the organizers by 31 October 2026 (title, abstract, relevant publications).
+Short-talk applications for the graduate student session are not part of the form: students emailed the organizers by 31 October 2026 (title, abstract, relevant publications). Applications are now closed and three speakers have been notified.
 
 Then **Send → link icon → Shorten URL**, copy the `https://forms.gle/...` link, and in `index.html` set:
 
