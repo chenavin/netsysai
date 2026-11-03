@@ -66,3 +66,4 @@ Every Register button on the page will then open the form. While the value is em
 - **Venue**: fill in the building and hall ("Building and hall: TBA") and the parking details.
 - **Dates**: set the "TBA" deadlines in the Participate section.
 - Update "Last updated" in the footer.
+- After editing `style.css`, change the `?v=` date on the `style.css` link in `index.html` so browsers fetch the new version instead of an old cached copy.

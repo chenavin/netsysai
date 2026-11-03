@@ -178,14 +178,14 @@ section:not(.alt) .speaker { background: var(--paper); box-shadow: none; }
 .program { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .program td { padding: 16px 20px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .program tr:last-child td { border-bottom: 0; }
-.program td.time { width: 110px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.program td.time { width: 150px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .program .title { font-weight: 700; color: var(--ink); }
 .program .who { font-size: 15px; color: #55555A; }
 .program tr.break td { background: var(--paper); color: var(--muted); }
 .program tr.break .title { color: var(--muted); font-weight: 600; }
 .program tr.key td.time { color: var(--orange-dark); }
 .program tr.key td:first-child { box-shadow: inset 4px 0 0 var(--orange); }
-.program td.time .end { display: block; font-size: 13px; font-weight: 500; color: var(--muted); }
+.program td.time .end { font-weight: 500; color: var(--muted); }
 .program .title a { color: inherit; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
 .program .title a:hover { color: var(--orange-dark); }
 .program .title.tba { font-weight: 500; font-style: italic; color: var(--muted); }
@@ -281,6 +281,7 @@ footer strong { color: var(--white); }
   .avatar { width: 96px; height: 96px; }
   .program td { padding: 12px 14px; }
   .program td.time { width: 70px; font-size: 15px; }
+  .program td.time .end { display: block; font-size: 13px; }
   .program tr.session td { padding: 18px 14px 6px; }
   .program tr.session .note { display: block; margin: 4px 0 0; }
   .talk-info summary { grid-template-columns: 1fr; padding: 16px 48px 16px 16px; }
