@@ -237,20 +237,31 @@
 </section>
 
 <!-- ============ PROGRAM ============
-     Edit rows below. Row classes: "key" = highlighted talk, "break" = coffee/lunch. -->
+     Edit rows below. Each time cell holds the start time and <span class="end"> the end time.
+     Row classes: "session" = session heading, "key" = highlighted talk (keynote), "break" = coffee/lunch.
+     Talk titles that have an entry in "Talks & abstracts" link to it (href="#talk-<name>"). -->
 <section id="program">
   <div class="wrap">
     <div class="section-head"><h2>Program</h2></div>
-    <p><span class="tag">Tentative</span>&nbsp; The detailed program with talk titles will be posted here. Times are indicative and subject to change.</p>
+    <p class="program-note"><span class="tag">Tentative</span>&nbsp; Thursday, 19 November 2026. Invited talks are 40 minutes and student talks 20 minutes. Times may still change slightly.</p>
     <table class="program">
       <tbody>
-        <tr class="break"><td class="time">09:30</td><td><div class="title">Registration, coffee &amp; networking</div></td></tr>
-        <tr><td class="time">10:00</td><td><div class="title">Welcome, greetings and opening remarks</div><div class="who">BGU, DAAD and partners · Chen Avin (BGU)</div></td></tr>
-        <tr class="key"><td class="time">10:30</td><td><div class="title">Morning session</div><div class="who">Keynote, Stefan Schmid (TU Berlin): “From <span class="nowrap">Topology-Aware</span> to <span class="nowrap">Fabric-Adaptive</span>: Rethinking Datacenter Networks for AI”<br>Two invited talks, speakers and titles TBA</div></td></tr>
-        <tr class="break"><td class="time">12:45</td><td><div class="title">Lunch break</div><div class="who">DAAD information stand for short consultations</div></td></tr>
-        <tr class="key"><td class="time">13:30</td><td><div class="title">Afternoon session</div><div class="who">Three invited talks, speakers and titles TBA</div></td></tr>
-        <tr class="break"><td class="time">15:00</td><td><div class="title">Coffee break</div><div class="who">DAAD information stand for short consultations</div></td></tr>
-        <tr><td class="time">15:30</td><td><div class="title">Graduate student session</div><div class="who">Short talks by MSc and PhD students</div></td></tr>
+        <tr class="break"><td class="time">09:30<span class="end">10:00</span></td><td><div class="title">Registration, coffee &amp; networking</div></td></tr>
+        <tr><td class="time">10:00<span class="end">10:30</span></td><td><div class="title">Welcome, greetings and opening remarks</div><div class="who">BGU, DAAD and partners · Chen Avin (BGU)</div></td></tr>
+        <tr class="session"><td colspan="2">Morning session</td></tr>
+        <tr class="key"><td class="time">10:30<span class="end">11:10</span></td><td><div class="title"><a href="#talk-schmid">From <span class="nowrap">Topology-Aware</span> to <span class="nowrap">Fabric-Adaptive</span>: Rethinking Datacenter Networks for AI</a></div><div class="who"><b>Stefan Schmid</b> · TU Berlin <span class="badge">Keynote</span></div></td></tr>
+        <tr><td class="time">11:10<span class="end">11:50</span></td><td><div class="title">What to Keep and How to Remember: Towards Efficient World Models</div><div class="who"><b>Chaim Baskin</b> · BGU · Decart</div></td></tr>
+        <tr><td class="time">11:50<span class="end">12:30</span></td><td><div class="title tba">Title TBA</div><div class="who"><b>Asaf Aharoni</b> · Google</div></td></tr>
+        <tr class="break"><td class="time">12:30<span class="end">13:00</span></td><td><div class="title">Lunch break</div><div class="who">DAAD information stand for short consultations</div></td></tr>
+        <tr class="session"><td colspan="2">Afternoon session</td></tr>
+        <tr><td class="time">13:00<span class="end">13:40</span></td><td><div class="title">Computing and Networking for Cloud and <span class="nowrap">AI-Factories</span></div><div class="who"><b>Eitan Zahavi</b> · NVIDIA</div></td></tr>
+        <tr><td class="time">13:40<span class="end">14:20</span></td><td><div class="title tba">Title TBA</div><div class="who"><b>Noam Attias</b> · Amazon · Annapurna Labs</div></td></tr>
+        <tr><td class="time">14:20<span class="end">15:00</span></td><td><div class="title"><a href="#talk-silberstein">Large-Scale <span class="nowrap">Optics-Only</span> Network for AI Model Training with <span class="nowrap">Low-Radix</span> Optical Switches</a></div><div class="who"><b>Mark Silberstein</b> · Technion</div></td></tr>
+        <tr class="break"><td class="time">15:00<span class="end">15:30</span></td><td><div class="title">Coffee break</div><div class="who">DAAD information stand for short consultations</div></td></tr>
+        <tr class="session"><td colspan="2">Graduate student session <span class="note">Short talks by MSc and PhD students</span></td></tr>
+        <tr class="student"><td class="time">15:30<span class="end">15:50</span></td><td><div class="title tba">Student talk 1: title TBA</div><div class="who">Speaker TBA</div></td></tr>
+        <tr class="student"><td class="time">15:50<span class="end">16:10</span></td><td><div class="title tba">Student talk 2: title TBA</div><div class="who">Speaker TBA</div></td></tr>
+        <tr class="student"><td class="time">16:10<span class="end">16:30</span></td><td><div class="title tba">Student talk 3: title TBA</div><div class="who">Speaker TBA</div></td></tr>
         <tr><td class="time">16:30</td><td><div class="title">Closing remarks</div></td></tr>
       </tbody>
     </table>

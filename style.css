@@ -185,6 +185,18 @@ section:not(.alt) .speaker { background: var(--paper); box-shadow: none; }
 .program tr.break .title { color: var(--muted); font-weight: 600; }
 .program tr.key td.time { color: var(--orange-dark); }
 .program tr.key td:first-child { box-shadow: inset 4px 0 0 var(--orange); }
+.program td.time .end { display: block; font-size: 13px; font-weight: 500; color: var(--muted); }
+.program .title a { color: inherit; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
+.program .title a:hover { color: var(--orange-dark); }
+.program .title.tba { font-weight: 500; font-style: italic; color: var(--muted); }
+.program .who b { color: var(--ink-2); font-weight: 600; }
+.program .badge { display: inline-block; margin-left: 8px; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--white); background: var(--teal); padding: 2px 8px; border-radius: 999px; vertical-align: 1px; }
+.program tr.session td {
+  padding: 22px 20px 8px; background: var(--white); border-bottom: 2px solid var(--orange-soft);
+  font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--orange-dark);
+}
+.program tr.session .note { margin-left: 10px; font-size: 13px; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--muted); }
+.program-note { margin-bottom: 20px; }
 
 /* ---------- Callout cards (poster bottom boxes) ---------- */
 .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -269,6 +281,8 @@ footer strong { color: var(--white); }
   .avatar { width: 96px; height: 96px; }
   .program td { padding: 12px 14px; }
   .program td.time { width: 70px; font-size: 15px; }
+  .program tr.session td { padding: 18px 14px 6px; }
+  .program tr.session .note { display: block; margin: 4px 0 0; }
   .talk-info summary { grid-template-columns: 1fr; padding: 16px 48px 16px 16px; }
   .talk-info summary::after { right: 18px; }
   .talk-info .body { margin: 0 16px; }
