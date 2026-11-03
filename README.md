@@ -59,6 +59,7 @@ Every Register button on the page will then open the form. While the value is em
 ## 3. Common updates
 
 - **Talk title**: edit the `<p class="talk">` line in the speaker's card, and the matching row in the Program table.
+- **Abstract / bio**: in the "Talks & abstracts" list (below the speaker cards), copy a `<details class="talk-info">` block, set `id="talk-<name>"`, fill in what you have (drop the Abstract or Bio part if missing, and adjust the label), then wrap the title on the speaker's card in `<a href="#talk-<name>">…</a>`.
 - **Speaker photo**: add a square JPG (about 400×400) to `assets/speakers/`. Then replace `<div class="avatar" …>AA</div>` with `<img class="avatar" src="assets/speakers/aharoni.jpg" alt="Asaf Aharoni">`.
 - **Program row**: copy a `<tr>` in the Program table. Add `class="key"` to highlight a talk, or `class="break"` for a coffee or lunch break. Remove the "Tentative" tag once the program is final.
 - **Company logos**: save the official logo file (SVG preferred) as `assets/logos/nvidia.svg` and so on. In the "Speakers from" strip, replace `<span class="wordmark">NVIDIA</span>` with `<img src="assets/logos/nvidia.svg" alt="NVIDIA">`. Logos are shown in grayscale and turn to color on hover.

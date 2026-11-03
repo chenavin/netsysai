@@ -159,7 +159,7 @@
         <p class="name">Stefan Schmid</p>
         <p class="role">Professor</p>
         <p class="aff">TU Berlin</p>
-        <p class="talk">From <span class="nowrap">Topology-Aware</span> to <span class="nowrap">Fabric-Adaptive</span>: Rethinking Datacenter Networks for AI</p>
+        <p class="talk"><a href="#talk-schmid">From <span class="nowrap">Topology-Aware</span> to <span class="nowrap">Fabric-Adaptive</span>: Rethinking Datacenter Networks for AI</a></p>
       </article>
       <article class="speaker">
         <img class="avatar" src="assets/speakers/zahavi.jpg" alt="Eitan Zahavi">
@@ -194,14 +194,41 @@
         <p class="name">Mark Silberstein</p>
         <p class="role">Professor</p>
         <p class="aff">Technion</p>
-        <p class="talk">Talk title TBA</p>
+        <p class="talk"><a href="#talk-silberstein">Large-Scale <span class="nowrap">Optics-Only</span> Network for AI Model Training with <span class="nowrap">Low-Radix</span> Optical Switches</a></p>
       </article>
     </div>
 
-    <details class="bio">
-      <summary>Keynote speaker Prof. Stefan Schmid (TU Berlin): short bio</summary>
-      <p>Stefan Schmid is a Professor at the Technical University of Berlin, Germany. MSc and PhD at ETH Zurich, Postdoc at TU Munich and University of Paderborn, Senior Research Scientist at T-Labs in Berlin, Associate Professor at Aalborg University, Denmark, Full Professor at the University of Vienna, Austria, and sabbatical as a Fellow at the Israel Institute for Advanced Studies (IIAS), Israel. Stefan Schmid received the IEEE Communications Society ITC Early Career Award 2016, an ERC Consolidator Grant 2019, and an ERC Proof-of-Concept Grant 2026. He is the Editor in Chief of the EATCS Bulletin, was a co-chair of ACM Sigmetrics and ACM MobiHoc, and served as local organizer of DISC and IEEE NetSoft.</p>
-    </details>
+    <!-- TALKS & ABSTRACTS: one <details class="talk-info"> per speaker who has sent an abstract or bio.
+         To add one: copy a block, set id="talk-<name>", and link the talk title on the speaker's card to "#talk-<name>".
+         Leave out the Abstract or Bio part if there is none, and adjust the labels in <span class="has">. -->
+    <h3 class="sub-head">Talks &amp; abstracts</h3>
+    <div class="talk-list">
+      <details class="talk-info" id="talk-schmid">
+        <summary>
+          <span class="who">Stefan Schmid <span class="aff">· TU Berlin</span></span>
+          <span class="has">Keynote · Bio</span>
+          <span class="title">From <span class="nowrap">Topology-Aware</span> to <span class="nowrap">Fabric-Adaptive</span>: Rethinking Datacenter Networks for AI</span>
+        </summary>
+        <div class="body">
+          <h4>About the speaker</h4>
+          <p>Stefan Schmid is a Professor at the Technical University of Berlin, Germany. MSc and PhD at ETH Zurich, Postdoc at TU Munich and University of Paderborn, Senior Research Scientist at T-Labs in Berlin, Associate Professor at Aalborg University, Denmark, Full Professor at the University of Vienna, Austria, and sabbatical as a Fellow at the Israel Institute for Advanced Studies (IIAS), Israel. Stefan Schmid received the IEEE Communications Society ITC Early Career Award 2016, an ERC Consolidator Grant 2019, and an ERC Proof-of-Concept Grant 2026. He is the Editor in Chief of the EATCS Bulletin, was a co-chair of ACM Sigmetrics and ACM MobiHoc, and served as local organizer of DISC and IEEE NetSoft.</p>
+        </div>
+      </details>
+      <details class="talk-info" id="talk-silberstein">
+        <summary>
+          <span class="who">Mark Silberstein <span class="aff">· Technion</span></span>
+          <span class="has">Abstract · Bio</span>
+          <span class="title">Large-Scale <span class="nowrap">Optics-Only</span> Network for AI Model Training with <span class="nowrap">Low-Radix</span> Optical Switches</span>
+        </summary>
+        <div class="body">
+          <h4>Abstract</h4>
+          <p>Machine learning training places immense demands on cluster networks, motivating specialized architectures and co-design with parallelization strategies. Recent designs incorporating optical circuit switches (OCSes) are promising, offering improved cost, power efficiency, and long-term bandwidth scaling than packet switches. However, most existing approaches rely on costly high-radix OCSes and/or combine them with packet switches to achieve competitive performance at scale. Unfortunately, high-radix OCSes are both expensive and slow to reconfigure, limiting both scalability and performance.</p>
+          <p>We propose Arrays of Cheap Optical Switches (ACOS), which bring application co-design directly to the structure of the reconfigurable fabric. Using low-radix OCSes as building blocks, ACOS supports the forms of reconfiguration needed in training clusters including topology selection, workload adaptation, and failure resilience. The cost of ACOS scales with supported topologies and adaptations rather than with port count, breaking past the scalability barriers of current specialized ML networks. We show through simulation and via our prototype that ACOS-based deployments match the performance of fully provisioned packet-switched networks when training state-of-the-art LLMs at scale, while delivering significant cost savings using existing off-the-shelf OCSes, with strong bandwidth scaling and a fraction of the power of bandwidth-equivalent packet switched networks.</p>
+          <h4>About the speaker</h4>
+          <p>Mark Silberstein is a professor in the Electrical and Computer Engineering Department at the Technion – Israel Institute of Technology, and the head of the Accelerated Computing Systems Lab. His research interests span a broad range of topics in computer systems, including OS, networking, computer architecture, and systems security. He recently spent a sabbatical in NVIDIA Networking, and got particularly excited about emerging networking technologies. He served as a PC co-chair in EuroSys’24 and ASPLOS’26.</p>
+        </div>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -361,6 +388,12 @@
       a.textContent = 'Registration opens soon'; a.classList.add('disabled');
     }
   });
+  // Talks & abstracts: open the entry a link (or the page URL) points to
+  function openTalk() {
+    var d = location.hash && document.getElementById(location.hash.slice(1));
+    if (d && d.tagName === 'DETAILS') { d.open = true; }
+  }
+  window.addEventListener('hashchange', openTalk); openTalk();
   // Mobile menu
   var t = document.querySelector('.menu-toggle'), m = document.getElementById('menu');
   t.addEventListener('click', function () { var o = m.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
