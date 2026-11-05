@@ -9,3 +9,6 @@ notes/
 
 # Private instructions for Claude
 CLAUDE.md
+
+# Private data (registration lists etc.): local only, never commit
+private/
