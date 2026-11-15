@@ -173,7 +173,7 @@
         <p class="name">Asaf Aharoni</p>
         <p class="role">Distinguished Software Engineer</p>
         <p class="aff">Google</p>
-        <p class="talk">Advancements in Speculative Decoding</p>
+        <p class="talk"><a href="#talk-aharoni">Advancements in Speculative Decoding</a></p>
       </article>
       <article class="speaker">
         <img class="avatar" src="assets/speakers/sabbag.jpg" alt="Erez Sabbag">
@@ -234,6 +234,22 @@
           <p>His research spans machine learning and computer vision, with an emphasis on multimodal foundation models, world models, geometric deep learning, and efficient and robust AI. His current work explores real-time generative models and embodied intelligence, connecting perception, prediction, and planning, alongside research on AI safety and computational efficiency.</p>
           <p>Previously, he was a Research Scientist at Intel Labs and a Research Associate and Principal Investigator at the Technion. He holds a PhD in Computer Science and an MSc in Electrical Engineering from the Technion, and a BSc in Electrical Engineering from Braude College.</p>
           <p>He serves as an Action Editor for Transactions on Machine Learning Research (TMLR) and has served as an Area Chair for conferences including NeurIPS, ICLR, and WACV.</p>
+        </div>
+      </details>
+      <details class="talk-info" id="talk-aharoni">
+        <summary>
+          <span class="who">Asaf Aharoni <span class="aff">· Google</span></span>
+          <span class="has">Abstract · Bio</span>
+          <span class="title">Advancements in Speculative Decoding</span>
+        </summary>
+        <div class="body">
+          <h4>Abstract</h4>
+          <p>Autoregressive decoding in large language models (LLMs) is fundamentally bottlenecked by memory bandwidth rather than compute: generating each token sequentially requires streaming the model's weights from high-bandwidth memory (HBM) every generation step, leaving modern AI accelerators' massive parallel matrix compute largely underutilized. Speculative decoding bridges this hardware–algorithm gap by using a fast drafter to propose multiple candidate tokens and verifying them in parallel within a single target model forward pass, accelerating generation without compromising output quality.</p>
+          <p>In this talk, I will trace the algorithmic and systems evolution of speculative decoding from its foundations to state-of-the-art production serving. I will examine why standard myopic token-by-token verification is suboptimal and show how joint Block Verification provably improves the expected acceptance length under partial sample-path information with zero additional model compute. I will map the evolution of drafter architectures along the wall-time drafter cost vs. drafter quality Pareto frontier, highlighting three fundamental ways to break past the standalone drafter ceiling: (1) reusing the target model's KV cache and hidden activations, (2) escaping exponential sequential decay via dynamic tree branching and parallel block diffusion drafters, and (3) relaxing strict distributional equivalence via bounded lenience.</p>
+          <p>Finally, I will discuss what happens when speculative verification meets datacenter serving realities at the "Parallel Verification Wall", where large batch sizes, deep candidate trees, and agentic workloads saturate accelerator compute, shifting the regime from a pure latency+throughput win-win to a systems scheduling tradeoff. I will highlight open research challenges at the boundary of algorithms, hardware utilization, and disaggregated serving.</p>
+          <h4>About the speaker</h4>
+          <p>Asaf Aharoni is a Distinguished Software Engineer at Google Research, leading research and engineering teams focused on LLM inference efficiency, algorithm–hardware co-design, and large-scale serving optimization. Since 2022, his group has worked closely with the Gemini, Google Search, and Google Cloud teams to accelerate foundation model inference, increase serving capacity, and co-design next-generation model architectures and pretraining schemes for modern AI accelerators.</p>
+          <p>Asaf joined Google in 2017 and previously led the Google Duplex Research team responsible for the natural language understanding system behind Google's conversational AI agent. His recent work includes advances in speculative decoding such as optimal block verification, and hardware-aware inference algorithms.</p>
         </div>
       </details>
       <details class="talk-info" id="talk-zahavi">
@@ -298,7 +314,7 @@
         <tr class="session"><td colspan="2">Morning session</td></tr>
         <tr class="key"><td class="time">10:30<span class="end"> – 11:10</span></td><td><div class="title"><a href="#talk-schmid">From <span class="nowrap">Topology-Aware</span> to <span class="nowrap">Fabric-Adaptive</span>: Rethinking Datacenter Networks for AI</a></div><div class="who"><b>Stefan Schmid</b> · TU Berlin <span class="badge">Keynote</span></div></td></tr>
         <tr><td class="time">11:10<span class="end"> – 11:50</span></td><td><div class="title"><a href="#talk-baskin">What to Keep and How to Remember: Towards Efficient World Models</a></div><div class="who"><b>Chaim Baskin</b> · BGU · Decart</div></td></tr>
-        <tr><td class="time">11:50<span class="end"> – 12:30</span></td><td><div class="title">Advancements in Speculative Decoding</div><div class="who"><b>Asaf Aharoni</b> · Google</div></td></tr>
+        <tr><td class="time">11:50<span class="end"> – 12:30</span></td><td><div class="title"><a href="#talk-aharoni">Advancements in Speculative Decoding</a></div><div class="who"><b>Asaf Aharoni</b> · Google</div></td></tr>
         <tr class="break"><td class="time">12:30<span class="end"> – 13:15</span></td><td><div class="title">Lunch break</div><div class="who">DAAD information stand for short consultations</div></td></tr>
         <tr class="session"><td colspan="2">Afternoon session</td></tr>
         <tr><td class="time">13:15<span class="end"> – 13:55</span></td><td><div class="title"><a href="#talk-zahavi">Computing and Networking for Cloud and <span class="nowrap">AI-Factories</span></a></div><div class="who"><b>Eitan Zahavi</b> · NVIDIA</div></td></tr>
@@ -438,7 +454,7 @@
 <footer>
   <div class="wrap">
     <div><strong>NetSysAI 2026</strong> · Networking and Systems for AI · 19 November 2026 · Ben-Gurion University of the Negev</div>
-    <div>Last updated: 14 November 2026</div>
+    <div>Last updated: 15 November 2026</div>
   </div>
 </footer>
 
