@@ -188,6 +188,9 @@ section:not(.alt) .speaker { background: var(--paper); box-shadow: none; }
 .program td.time .end { font-weight: 500; color: var(--muted); }
 .program .title a { color: inherit; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
 .program .title a:hover { color: var(--orange-dark); }
+/* "PDF" tag linking to a talk's slides */
+a.pdf, .speaker .talk a.pdf, .program .title a.pdf { display: inline-block; margin-left: 6px; padding: 1px 6px; border: 1px solid var(--orange); border-radius: 4px; font-size: 11px; font-style: normal; font-weight: 700; letter-spacing: .06em; line-height: 1.5; color: var(--orange-dark); text-decoration: none; vertical-align: 2px; white-space: nowrap; }
+a.pdf:hover, .speaker .talk a.pdf:hover, .program .title a.pdf:hover { background: var(--orange); border-color: var(--orange); color: var(--white); }
 .program .title.tba { font-weight: 500; font-style: italic; color: var(--muted); }
 .program .who b { color: var(--ink-2); font-weight: 600; }
 .program .badge { display: inline-block; margin-left: 8px; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--white); background: var(--teal); padding: 2px 8px; border-radius: 999px; vertical-align: 1px; }
