@@ -12,3 +12,9 @@ CLAUDE.md
 
 # Private data (registration lists etc.): local only, never commit
 private/
+
+# Original event photos (full size): local only. Resized web copies go in assets/gallery/
+event-photos/
+
+# macOS Finder files
+.DS_Store

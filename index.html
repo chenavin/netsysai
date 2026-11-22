@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2026-11-21">
+  <link rel="stylesheet" href="style.css?v=2026-11-22">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,6 +57,7 @@
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     <ul id="menu">
       <li><a href="#about">About</a></li>
+      <li><a href="#photos">Photos</a></li>
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#program">Program</a></li>
       <li><a href="#students">Student Talks</a></li>
@@ -145,6 +146,38 @@
     </ul>
   </div>
 </section>
+
+<!-- ============ PHOTOS ============
+     Originals stay in event-photos/ (git-ignored). Web copies are in assets/gallery/:
+     <name>.jpg (max 1600px) and <name>-thumb.jpg (max 640px), metadata stripped.
+     Each photo: <figure><a href="full.jpg"><img src="thumb.jpg" alt="…" width height></a><figcaption>…</figcaption></figure> -->
+<section id="photos" class="photos-section">
+  <div class="wrap">
+    <div class="section-head"><h2>Photos</h2></div>
+    <p class="photos-note">Moments from the workshop on 19 November 2026. Click a photo to enlarge.</p>
+    <div class="gallery">
+      <figure><a href="assets/gallery/01-group.jpg"><img src="assets/gallery/01-group-thumb.jpg" width="640" height="480" loading="lazy" alt="Five people standing between the Research in Germany and BGU banners"></a><figcaption>From left: DAAD representatives, Chen Avin, Stefan Schmid and Omer Gurewitz, Head of the School of Electrical and Computer Engineering, BGU</figcaption></figure>
+      <figure><a href="assets/gallery/02-opening.jpg"><img src="assets/gallery/02-opening-thumb.jpg" width="640" height="480" loading="lazy" alt="Chen Avin on stage in front of the Welcome to NetSysAI 2026 slide"></a><figcaption>Opening remarks by Chen Avin</figcaption></figure>
+      <figure><a href="assets/gallery/03-schmid.jpg"><img src="assets/gallery/03-schmid-thumb.jpg" width="480" height="640" loading="lazy" alt="Stefan Schmid presenting his keynote"></a><figcaption>Keynote: Stefan Schmid (TU Berlin)</figcaption></figure>
+      <figure><a href="assets/gallery/04-baskin.jpg"><img src="assets/gallery/04-baskin-thumb.jpg" style="object-position:22% center" width="640" height="342" loading="lazy" alt="Chaim Baskin at the podium while Chen Avin introduces him"></a><figcaption>Chaim Baskin (BGU · Decart), introduced by Chen Avin</figcaption></figure>
+      <figure><a href="assets/gallery/05-aharoni.jpg"><img src="assets/gallery/05-aharoni-thumb.jpg" width="480" height="640" loading="lazy" alt="Asaf Aharoni in front of his title slide"></a><figcaption>Asaf Aharoni (Google): Advancements in Speculative Decoding</figcaption></figure>
+      <figure><a href="assets/gallery/06-zahavi.jpg"><img src="assets/gallery/06-zahavi-thumb.jpg" style="object-position:center 30%" width="480" height="640" loading="lazy" alt="Eitan Zahavi in front of his NVIDIA title slide"></a><figcaption>Eitan Zahavi (NVIDIA): Computing and Networking for Cloud and AI-Factories</figcaption></figure>
+      <figure><a href="assets/gallery/07-zahavi-blackwell.jpg"><img src="assets/gallery/07-zahavi-blackwell-thumb.jpg" width="480" height="640" loading="lazy" alt="Eitan Zahavi pointing at a slide on the Blackwell generation"></a><figcaption>Eitan Zahavi on the NVIDIA Blackwell generation</figcaption></figure>
+      <figure><a href="assets/gallery/08-afternoon-session.jpg"><img src="assets/gallery/08-afternoon-session-thumb.jpg" width="640" height="480" loading="lazy" alt="Wide view of the audience in the auditorium"></a><figcaption>The afternoon session in Auditorium 202, with Gabi Scalosub in front</figcaption></figure>
+      <figure><a href="assets/gallery/09-sabbag.jpg"><img src="assets/gallery/09-sabbag-thumb.jpg" width="480" height="640" loading="lazy" alt="Erez Sabbag next to his title slide"></a><figcaption>Erez Sabbag (Amazon · Annapurna Labs): Transport Protocols for ML Workloads</figcaption></figure>
+      <figure><a href="assets/gallery/10-silberstein.jpg"><img src="assets/gallery/10-silberstein-thumb.jpg" width="640" height="480" loading="lazy" alt="Mark Silberstein presenting a slide on topology selection"></a><figcaption>Mark Silberstein (Technion): Large-Scale Optics-Only Network for AI Model Training</figcaption></figure>
+      <figure><a href="assets/gallery/11-coffee-break.jpg"><img src="assets/gallery/11-coffee-break-thumb.jpg" width="480" height="640" loading="lazy" alt="Participants talking in the hallway during the coffee break"></a><figcaption>Coffee break</figcaption></figure>
+      <figure><a href="assets/gallery/12-discussions.jpg"><img src="assets/gallery/12-discussions-thumb.jpg" width="480" height="640" loading="lazy" alt="Participants talking outside the auditorium"></a><figcaption>Discussions between sessions</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<dialog class="lightbox" aria-label="Photo viewer">
+  <button class="lb-close" type="button" aria-label="Close">&times;</button>
+  <button class="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+</dialog>
 
 <!-- ============ SPEAKERS ============
      To add a talk title: fill the <p class="talk"> line in the speaker's card.
@@ -454,7 +487,7 @@
 <footer>
   <div class="wrap">
     <div><strong>NetSysAI 2026</strong> · Networking and Systems for AI · 19 November 2026 · Ben-Gurion University of the Negev</div>
-    <div>Last updated: 21 November 2026</div>
+    <div>Last updated: 22 November 2026</div>
   </div>
 </footer>
 
@@ -473,6 +506,28 @@
     if (d && d.tagName === 'DETAILS') { d.open = true; }
   }
   window.addEventListener('hashchange', openTalk); openTalk();
+  // Photo album: open photos in a viewer (links still work without JS)
+  (function () {
+    var lb = document.querySelector('.lightbox'), links = [].slice.call(document.querySelectorAll('.gallery a'));
+    if (!lb || !lb.showModal) return;
+    var img = lb.querySelector('img'), cap = lb.querySelector('figcaption'), i = 0;
+    function show(n) {
+      i = (n + links.length) % links.length;
+      var a = links[i];
+      img.src = a.getAttribute('href'); img.alt = a.querySelector('img').alt;
+      cap.textContent = a.parentNode.querySelector('figcaption').textContent;
+    }
+    links.forEach(function (a, n) { a.addEventListener('click', function (e) { e.preventDefault(); show(n); lb.showModal(); }); });
+    lb.querySelector('.lb-prev').addEventListener('click', function () { show(i - 1); });
+    lb.querySelector('.lb-next').addEventListener('click', function () { show(i + 1); });
+    lb.querySelector('.lb-close').addEventListener('click', function () { lb.close(); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+    lb.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') show(i - 1);
+      if (e.key === 'ArrowRight') show(i + 1);
+    });
+    lb.addEventListener('close', function () { img.removeAttribute('src'); });
+  })();
   // Mobile menu
   var t = document.querySelector('.menu-toggle'), m = document.getElementById('menu');
   t.addEventListener('click', function () { var o = m.classList.toggle('open'); t.setAttribute('aria-expanded', o); });

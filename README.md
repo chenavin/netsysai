@@ -67,3 +67,10 @@ Every Register button on the page will then open the form. While the value is em
 - **Dates**: set the "TBA" deadlines in the Participate section.
 - Update "Last updated" in the footer.
 - After editing `style.css`, change the `?v=` date on the `style.css` link in `index.html` so browsers fetch the new version instead of an old cached copy.
+
+## Photo album
+
+Full-size originals go in `event-photos/` (git-ignored, never pushed). Published copies live in
+`assets/gallery/`: `<name>.jpg` (max 1600 px) and `<name>-thumb.jpg` (max 640 px), JPEG quality ~80,
+with EXIF/GPS metadata stripped. Each photo is one `<figure>` in the `#photos` section of `index.html`;
+the viewer (click to enlarge, arrow keys, Esc) is the small script at the end of the page.
